@@ -17,9 +17,9 @@ This will configure your secret string that they use to encrypt.
 	"email": "test20@example.com",
 	"password": "123"
 }
-Select Raw and JSON in the Body section of Postman
+Select Raw and JSON in the Body section of Postman and click Send.
 6. Change the URL to: localhost:3090/signin and use the same email and password to sign in. You should get a token from this action.
-7. Change URL to localhost:3090 and do a GET request with the token from the previous step. You should get:
+7. Change URL to localhost:3090 and do a GET request with the token from the previous step (Change to Headers Tab and add a second column as Authorization and paste the token in that field). You should get:
 {
     "hi": "there"
 }
