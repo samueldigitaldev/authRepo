@@ -23,7 +23,7 @@ const localLogin = new LocalStrategy(localOptions, function(email, password, don
     })
 });
 
-//Set up options for JWT strategies 
+//Set up options for JWT strategies  
 const jwtOptions = {
     jwtFromRequest: ExtractJwt.fromHeader('authorization'), //this is telling it to look at the header (authorization) for JWT
     secretOrKey: config.secret //need to have secret to decode
